@@ -29,7 +29,7 @@ void setup() {
 
 void loop() {
   int sensorValue = analogRead(A0);
-  int Humidity = map(sensorValue, 0, 1024, 100, 0);
+  int Humidity = map(sensorValue, 400, 1024, 100, 0);
   Serial.println(Humidity);
   delay(1000);
   void stateLed();
